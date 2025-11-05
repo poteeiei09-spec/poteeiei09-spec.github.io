@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Actives.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+    <section class="section1">
+        <nav>
+            <div class="link1">
+                <a href="ab">Tinnapat</a>
+            </div>
+            <div class="link2">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="Skills.html">sKills</a>
+                <a href="Project.html">Project</a>
+                <a href="Actives..html" class="active">Actives</a>
+                <a href="Contact.html">Contact</a>
+                <a href="Closing.html">Closing</a>
+            </div>
+        </nav>
+
+        <div>
+            
+                <div class="box">
+                    <div class="box1">
+                        <h1>ACTIVITIES</h1>
+                        <h4>ได้รับคัดเลือกเป็น รองประธานสภานักเรียนฝ่ายกิจกรรม</h4>
+                        <p>มีบทบาทสำคัญในการวางแผน สร้างสรรค์ และบริหารจัดการกิจกรรมหลักของโรงเรียนทั้งหมด
+                            ทำหน้าที่เป็นผู้นำด้านสันทนาการเพื่อส่งเสริมความสามัคคีและความสัมพันธ์ที่ดีของนักเรียน
+                            นอกจากนี้ยังมีความรับผิดชอบในการออกแบบและกำกับการแสดงในโอกาสพิเศษต่างๆ
+                            รวมถึงการทำหน้าที่พิธีกรดำเนินรายการ </p>
+                    </div>
+                    <div class="box2">
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                                
+                                <img src="img/WED PORT (31).svg" style="width:100%">
+
+                            </div>
+
+                            <div class="mySlides fade">
+                                
+                                <img src="img/WED PORT (32).svg" style="width:100%">
+
+                            </div>
+
+                            <div class="mySlides fade">
+                                
+                                <img src="img/WED PORT (33).svg" style="width:100%">
+
+                            </div>
+                            <div class="mySlides fade">
+                                
+                                <img src="img/WED PORT (34).svg" style="width:100%">
+
+                            </div>
+                            <div class="mySlides fade">
+                                
+                                <img src="img/WED PORT (35).svg" style="width:100%">
+
+                            </div>
+                        </div>
+                        <br>
+
+                        <div style="text-align:center "  >
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <div class="text2">
+        <p>PORTFOLIO TINNAPAT KWANON</p>
+        <p>05</p>
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>
